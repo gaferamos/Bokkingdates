@@ -14,7 +14,7 @@ namespace Bokkingdates
             Console.WriteLine("To exit press ESC kay");
             Menu.Menuoptions();
 
-
+            // aaaaaaaaaaaaaaaaaaaa
             //var userdate = DateTime.Parse( Console.ReadLine());
             //String '10/21/2024' was not recognized as a valid DateTime.
 
