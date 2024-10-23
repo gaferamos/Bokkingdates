@@ -22,6 +22,8 @@ namespace Bokkingdates
                 Console.WriteLine($"Final date of stayng{finaluserdate}");
 
             }
+            Menu.Menuoptions();
+
         }
 
     }
