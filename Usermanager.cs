@@ -24,6 +24,18 @@ namespace Bokkingdates
             Console.Write("Successfully registered");
 
         }
-        
+
+        public static void Acsessmenu()
+        {
+            Console.Clear();
+            Console.Write("1 - Register");
+            Console.Write("2 - Login");
+            Console.Write("3 - exit");
+            Console.Write("Successfully registered");
+           short option = short.Parse(Console.ReadLine());
+
+
+        }
     }
+    
 }
