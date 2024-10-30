@@ -7,15 +7,10 @@ namespace Bokkingdates
     {
         static void Main(string[] args)
         {
-            Console.Clear();
-            var date = DateTime.Now;
-            Console.WriteLine(date.Date);
-            Console.WriteLine("Wellcome");
-           
-            Menu.Menuoptions();
-
-           
-
+            
+            var userManager = new Usermanager();
+            userManager.Acsessmenu();
+ 
         }
     }
 }

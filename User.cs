@@ -14,8 +14,12 @@ namespace Bokkingdates
 		{
 			Id = Guid.NewGuid();
 		}
-		
+
+        public override string ToString()
+        {
+            return $"Nome: {Name}, Idade: {Age}, ID: {Id}";
+        }
 
 
-	}
+    }
 }
