@@ -7,10 +7,12 @@ namespace Bokkingdates
 		public string Name { get; set; }= string.Empty;
 		public int Age { get; set; }
 		public int Roomnum { get; set; }
-		
+		public DateTime? Checkindate { get; set; }
+        public DateTime? Checkoutdate { get; set; }
 
 
-		public User()
+
+        public User()
 		{
 			Id = Guid.NewGuid();
 		}
@@ -19,7 +21,18 @@ namespace Bokkingdates
         {
             return $"Nome: {Name}, Idade: {Age}, ID: {Id}";
         }
+		public void AddInitialDate(DateTime userdate)
+		{
+            Checkindate = userdate;
 
+        }
+
+        public static void InputInitialDate(Usermanager usermanager, Guid logiID)
+        {
+
+            //var uai = userManager.users.FirstOrDefault(u => u.Id == logiID);
+
+        }
 
     }
 }

@@ -4,7 +4,9 @@ namespace Bokkingdates
     public class Usermanager
     {
         private readonly List<User> users = new List<User>();
+
         
+
         public void CreateUserInput()
         {
             Console.Clear();
@@ -35,6 +37,7 @@ namespace Bokkingdates
             Console.ReadKey();
 
         }
+       
 
         public void UserLogin()
         {
@@ -47,6 +50,7 @@ namespace Bokkingdates
 
             Console.WriteLine("Id:");
             var logiID = Guid.Parse(Console.ReadLine());
+            User.InputInitialDate(logiID);
 
             foreach (var user in users)
             {

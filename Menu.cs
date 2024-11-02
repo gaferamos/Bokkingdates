@@ -31,6 +31,7 @@ namespace Bokkingdates
                             
                             
                             
+                            
 
 
                         }
@@ -39,14 +40,18 @@ namespace Bokkingdates
 
                             Console.WriteLine("invalid format. try inform date by ( dd / MM / yyyy )");
                             Console.WriteLine(ex.Data);
+                            Console.ReadKey();
+                            Menuoptions();
 
                         }
 
                         catch (Exception ex)
                         {
+                            Console.WriteLine("Ops something went wrong :( ");
                             Console.WriteLine(ex.Message);
                             Console.WriteLine(ex.InnerException);
                             Console.WriteLine(ex.Data);
+                            Menuoptions();
 
                         }
                         finally
